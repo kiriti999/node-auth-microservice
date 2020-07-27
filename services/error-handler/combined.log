@@ -1,0 +1,5 @@
+{"level":"info","message":"Logged error to files"}
+{"level":"info","message":"Logged error to files"}
+{"message":"Error logged to file with message: User not found and code: 404","level":"info"}
+{"message":"User not found and code: 404","level":"info"}
+{"message":"User not found and code: 404","level":"info"}
