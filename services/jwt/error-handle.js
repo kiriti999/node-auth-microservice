@@ -15,7 +15,7 @@ function APIError(message, httpCode) {
     
     try {
         axios.post('http://localhost:5000/api/error', { message, httpCode }).then((errorResponse) => {
-            console.log('errorResponse ', errorResponse.data);
+            console.log(errorResponse.data);
         });
     } catch (error) {
         console.log('Error creating logs: ', error);

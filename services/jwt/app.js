@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '5mb' }));
 
 // ROUTES with prefix
-app.use('/user/jwt', userRoute);
+app.use('/jwt/user', userRoute);
 
 // PORT
 const PORT = process.env.PORT || 4000;

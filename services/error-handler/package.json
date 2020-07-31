@@ -4,9 +4,7 @@
     "description": "Node APIError",
     "main": "app.js",
     "scripts": {
-        "test": "nodemon base-error.js",
-        "start": "pm2 start base-error.js",
-        "stop": "pm2 stop base-error.js"
+        "start": "nodemon app.js"
     },
     "author": "Kiriti Komaragiri",
     "license": "ISC",

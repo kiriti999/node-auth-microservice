@@ -32,6 +32,6 @@ function logError(req, res) {
     const message = req.body.message;
     const httpCode = req.body.httpCode;
     // log error to files
-    logger.info(`${message} and code: ${httpCode}`);
-    res.json(`Error logged:\n ${message} and code: ${httpCode}`);
+    logger.info(`${httpCode}: ${message}`);
+    res.json(`${httpCode}: ${message}`);
 }
