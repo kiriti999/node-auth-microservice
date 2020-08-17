@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    reverseproxy:
+        image: nginx
+        container_name: docker_nginx
+        ports:
+            - 6000:80
+        volumes:
+            - ./services:/default.conf
+        restart: always
+
+    jwt:
+        build: ./jwt
+        image: jwt:1.0
+        ports:
+            - 4000:4000
+        restart: always
+        volumes:
+            - ./jwt
+
+    

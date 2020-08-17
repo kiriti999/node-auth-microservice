@@ -21,6 +21,10 @@ app.listen(PORT, (req, res) => {
     console.log(`Server Started at PORT ${PORT}`);
 });
 
+app.get('/', function(req, res){
+    res.write('<html>Hello</html>')
+})
+
 // error handler middleware
 app.use((error, req, res, next) => {
     res.status(error.status || 500).send({
@@ -40,3 +44,10 @@ process.on('uncaughtException', (err) => {
     console.error(err, '@Uncaught Exception thrown');
     process.exit(1);
 });
+
+// jwt:
+//         build: ./jwt
+//         image: jwt:1.0
+//         ports:
+//             - 4000:4000
+//         restart: always
